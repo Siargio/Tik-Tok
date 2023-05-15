@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4DCEB741066EE0B8D72486D /* Pods_Tik_Tok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */; };
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
 		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
@@ -37,6 +38,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.debug.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.debug.xcconfig"; sourceTree = "<group>"; };
+		71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.release.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.release.xcconfig"; sourceTree = "<group>"; };
+		8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tik_Tok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,17 +77,38 @@
 				EC858EA22A12AB5100FFC363 /* FirebaseDatabase in Frameworks */,
 				EC858EA42A12AB5100FFC363 /* FirebaseStorage in Frameworks */,
 				EC858E9E2A12AB5100FFC363 /* FirebaseAuth in Frameworks */,
+				D4DCEB741066EE0B8D72486D /* Pods_Tik_Tok.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2DED619F14D4A861946CA090 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */,
+				71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8D85C1A2465A9EB06863DA96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EC858E562A12782D00FFC363 = {
 			isa = PBXGroup;
 			children = (
 				EC858E612A12782E00FFC363 /* Tik-Tok */,
 				EC858E602A12782E00FFC363 /* Products */,
+				2DED619F14D4A861946CA090 /* Pods */,
+				8D85C1A2465A9EB06863DA96 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC858E732A12782F00FFC363 /* Build configuration list for PBXNativeTarget "Tik-Tok" */;
 			buildPhases = (
+				84983CAA208B71A0DAF46474 /* [CP] Check Pods Manifest.lock */,
 				EC858E5B2A12782E00FFC363 /* Sources */,
 				EC858E5C2A12782E00FFC363 /* Frameworks */,
 				EC858E5D2A12782E00FFC363 /* Resources */,
+				655358D939268DAFC367B897 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,7 +253,7 @@
 			mainGroup = EC858E562A12782D00FFC363;
 			packageReferences = (
 				EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
 			);
 			productRefGroup = EC858E602A12782E00FFC363 /* Products */;
 			projectDirPath = "";
@@ -249,6 +276,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		655358D939268DAFC367B897 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84983CAA208B71A0DAF46474 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tik-Tok-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EC858E5B2A12782E00FFC363 /* Sources */ = {
@@ -406,6 +475,7 @@
 		};
 		EC858E742A12782F00FFC363 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -438,6 +508,7 @@
 		};
 		EC858E752A12782F00FFC363 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,7 +571,7 @@
 				kind = branch;
 			};
 		};
-		ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+		ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -538,7 +609,7 @@
 		};
 		ECBA27112A12C931006E0693 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			package = ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
