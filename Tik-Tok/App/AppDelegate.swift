@@ -5,15 +5,24 @@
 //  Created by Sergio on 15.05.23.
 //
 
+import FirebaseCore
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = HomeViewController()
+        window.rootViewController = viewController
+        self.window = window
+        self.window?.makeKeyAndVisible()
+
+        FirebaseApp.configure()
+
         return true
     }
 

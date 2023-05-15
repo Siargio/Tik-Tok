@@ -9,21 +9,56 @@
 /* Begin PBXBuildFile section */
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
-		EC858E672A12782E00FFC363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* ViewController.swift */; };
-		EC858E6A2A12782E00FFC363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC858E682A12782E00FFC363 /* Main.storyboard */; };
+		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
 		EC858E6C2A12782F00FFC363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC858E6B2A12782F00FFC363 /* Assets.xcassets */; };
 		EC858E6F2A12782F00FFC363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC858E6D2A12782F00FFC363 /* LaunchScreen.storyboard */; };
+		EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E7B2A127D9600FFC363 /* ExploreViewController.swift */; };
+		EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E7D2A127DE200FFC363 /* CameraViewController.swift */; };
+		EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E7F2A127DFB00FFC363 /* NotificationsViewController.swift */; };
+		EC858E822A127E1000FFC363 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E812A127E1000FFC363 /* ProfileViewController.swift */; };
+		EC858E842A127EB800FFC363 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E832A127EB800FFC363 /* UserListViewController.swift */; };
+		EC858E862A127EC900FFC363 /* SingInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E852A127EC900FFC363 /* SingInViewController.swift */; };
+		EC858E882A127ED800FFC363 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E872A127ED800FFC363 /* SingUpViewController.swift */; };
+		EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E892A127EE400FFC363 /* SettingsViewController.swift */; };
+		EC858E8C2A127F0700FFC363 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E8B2A127F0700FFC363 /* TabBarViewController.swift */; };
+		EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E8D2A127F4700FFC363 /* PostViewController.swift */; };
+		EC858E912A127F6800FFC363 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E902A127F6800FFC363 /* APICall.swift */; };
+		EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E922A127F7C00FFC363 /* StorageManager.swift */; };
+		EC858E952A127FA400FFC363 /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E942A127FA400FFC363 /* DataBaseManager.swift */; };
+		EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E962A127FCA00FFC363 /* AuthenticationManager.swift */; };
+		EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E982A127FE800FFC363 /* HapticsManager.swift */; };
+		EC858E9C2A12AB5100FFC363 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC858E9B2A12AB5100FFC363 /* FirebaseAnalytics */; };
+		EC858E9E2A12AB5100FFC363 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EC858E9D2A12AB5100FFC363 /* FirebaseAuth */; };
+		EC858EA02A12AB5100FFC363 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC858E9F2A12AB5100FFC363 /* FirebaseCrashlytics */; };
+		EC858EA22A12AB5100FFC363 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EC858EA12A12AB5100FFC363 /* FirebaseDatabase */; };
+		EC858EA42A12AB5100FFC363 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC858EA32A12AB5100FFC363 /* FirebaseStorage */; };
+		EC858EA62A12AC4700FFC363 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC858E662A12782E00FFC363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC858E692A12782E00FFC363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC858E662A12782E00FFC363 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EC858E6B2A12782F00FFC363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC858E6E2A12782F00FFC363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC858E702A12782F00FFC363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC858E7B2A127D9600FFC363 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
+		EC858E7D2A127DE200FFC363 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		EC858E7F2A127DFB00FFC363 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		EC858E812A127E1000FFC363 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EC858E832A127EB800FFC363 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		EC858E852A127EC900FFC363 /* SingInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInViewController.swift; sourceTree = "<group>"; };
+		EC858E872A127ED800FFC363 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		EC858E892A127EE400FFC363 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		EC858E8B2A127F0700FFC363 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		EC858E8D2A127F4700FFC363 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		EC858E902A127F6800FFC363 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		EC858E922A127F7C00FFC363 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		EC858E942A127FA400FFC363 /* DataBaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		EC858E962A127FCA00FFC363 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		EC858E982A127FE800FFC363 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +66,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC858EA02A12AB5100FFC363 /* FirebaseCrashlytics in Frameworks */,
+				EC858E9C2A12AB5100FFC363 /* FirebaseAnalytics in Frameworks */,
+				EC858EA22A12AB5100FFC363 /* FirebaseDatabase in Frameworks */,
+				EC858EA42A12AB5100FFC363 /* FirebaseStorage in Frameworks */,
+				EC858E9E2A12AB5100FFC363 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +96,78 @@
 		EC858E612A12782E00FFC363 /* Tik-Tok */ = {
 			isa = PBXGroup;
 			children = (
-				EC858E622A12782E00FFC363 /* AppDelegate.swift */,
-				EC858E642A12782E00FFC363 /* SceneDelegate.swift */,
-				EC858E662A12782E00FFC363 /* ViewController.swift */,
-				EC858E682A12782E00FFC363 /* Main.storyboard */,
-				EC858E6B2A12782F00FFC363 /* Assets.xcassets */,
-				EC858E6D2A12782F00FFC363 /* LaunchScreen.storyboard */,
-				EC858E702A12782F00FFC363 /* Info.plist */,
+				EC858E782A127BF500FFC363 /* App */,
+				EC858E8F2A127F5300FFC363 /* Manager */,
+				EC858E772A127BE800FFC363 /* Controllers */,
+				EC858E762A127BDC00FFC363 /* Resources */,
 			);
 			path = "Tik-Tok";
+			sourceTree = "<group>";
+		};
+		EC858E762A127BDC00FFC363 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E6B2A12782F00FFC363 /* Assets.xcassets */,
+				EC858E6D2A12782F00FFC363 /* LaunchScreen.storyboard */,
+				EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */,
+				EC858E702A12782F00FFC363 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC858E772A127BE800FFC363 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E7A2A127CBA00FFC363 /* Other */,
+				EC858E792A127CAF00FFC363 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EC858E782A127BF500FFC363 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E622A12782E00FFC363 /* AppDelegate.swift */,
+				EC858E642A12782E00FFC363 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EC858E792A127CAF00FFC363 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E8B2A127F0700FFC363 /* TabBarViewController.swift */,
+				EC858E662A12782E00FFC363 /* HomeViewController.swift */,
+				EC858E7B2A127D9600FFC363 /* ExploreViewController.swift */,
+				EC858E7D2A127DE200FFC363 /* CameraViewController.swift */,
+				EC858E7F2A127DFB00FFC363 /* NotificationsViewController.swift */,
+				EC858E812A127E1000FFC363 /* ProfileViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EC858E7A2A127CBA00FFC363 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E832A127EB800FFC363 /* UserListViewController.swift */,
+				EC858E852A127EC900FFC363 /* SingInViewController.swift */,
+				EC858E872A127ED800FFC363 /* SingUpViewController.swift */,
+				EC858E892A127EE400FFC363 /* SettingsViewController.swift */,
+				EC858E8D2A127F4700FFC363 /* PostViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EC858E8F2A127F5300FFC363 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E902A127F6800FFC363 /* APICall.swift */,
+				EC858E922A127F7C00FFC363 /* StorageManager.swift */,
+				EC858E942A127FA400FFC363 /* DataBaseManager.swift */,
+				EC858E962A127FCA00FFC363 /* AuthenticationManager.swift */,
+				EC858E982A127FE800FFC363 /* HapticsManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +186,13 @@
 			dependencies = (
 			);
 			name = "Tik-Tok";
+			packageProductDependencies = (
+				EC858E9B2A12AB5100FFC363 /* FirebaseAnalytics */,
+				EC858E9D2A12AB5100FFC363 /* FirebaseAuth */,
+				EC858E9F2A12AB5100FFC363 /* FirebaseCrashlytics */,
+				EC858EA12A12AB5100FFC363 /* FirebaseDatabase */,
+				EC858EA32A12AB5100FFC363 /* FirebaseStorage */,
+			);
 			productName = "Tik-Tok";
 			productReference = EC858E5F2A12782E00FFC363 /* Tik-Tok.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +221,9 @@
 				Base,
 			);
 			mainGroup = EC858E562A12782D00FFC363;
+			packageReferences = (
+				EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EC858E602A12782E00FFC363 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +240,7 @@
 			files = (
 				EC858E6F2A12782F00FFC363 /* LaunchScreen.storyboard in Resources */,
 				EC858E6C2A12782F00FFC363 /* Assets.xcassets in Resources */,
-				EC858E6A2A12782E00FFC363 /* Main.storyboard in Resources */,
+				EC858EA62A12AC4700FFC363 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +251,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC858E672A12782E00FFC363 /* ViewController.swift in Sources */,
+				EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */,
+				EC858E952A127FA400FFC363 /* DataBaseManager.swift in Sources */,
+				EC858E862A127EC900FFC363 /* SingInViewController.swift in Sources */,
+				EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */,
+				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
+				EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */,
+				EC858E882A127ED800FFC363 /* SingUpViewController.swift in Sources */,
+				EC858E8C2A127F0700FFC363 /* TabBarViewController.swift in Sources */,
+				EC858E842A127EB800FFC363 /* UserListViewController.swift in Sources */,
+				EC858E822A127E1000FFC363 /* ProfileViewController.swift in Sources */,
+				EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */,
+				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
+				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
+				EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */,
 				EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */,
+				EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */,
+				EC858E912A127F6800FFC363 /* APICall.swift in Sources */,
 				EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +275,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC858E682A12782E00FFC363 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC858E692A12782E00FFC363 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC858E6D2A12782F00FFC363 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +409,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3496F3A4HL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tik-Tok/Info.plist";
+				INFOPLIST_FILE = "Tik-Tok/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +423,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.my.Tik-Tok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +441,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3496F3A4HL;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Tik-Tok/Info.plist";
+				INFOPLIST_FILE = "Tik-Tok/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.my.Tik-Tok";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +486,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC858E9B2A12AB5100FFC363 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		EC858E9D2A12AB5100FFC363 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		EC858E9F2A12AB5100FFC363 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		EC858EA12A12AB5100FFC363 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		EC858EA32A12AB5100FFC363 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC858E572A12782E00FFC363 /* Project object */;
 }
