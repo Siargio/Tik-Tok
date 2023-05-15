@@ -33,6 +33,7 @@
 		EC858EA22A12AB5100FFC363 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EC858EA12A12AB5100FFC363 /* FirebaseDatabase */; };
 		EC858EA42A12AB5100FFC363 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC858EA32A12AB5100FFC363 /* FirebaseStorage */; };
 		EC858EA62A12AC4700FFC363 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */; };
+		ECBA27122A12C931006E0693 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = ECBA27112A12C931006E0693 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECBA27122A12C931006E0693 /* SDWebImage in Frameworks */,
 				EC858EA02A12AB5100FFC363 /* FirebaseCrashlytics in Frameworks */,
 				EC858E9C2A12AB5100FFC363 /* FirebaseAnalytics in Frameworks */,
 				EC858EA22A12AB5100FFC363 /* FirebaseDatabase in Frameworks */,
@@ -192,6 +194,7 @@
 				EC858E9F2A12AB5100FFC363 /* FirebaseCrashlytics */,
 				EC858EA12A12AB5100FFC363 /* FirebaseDatabase */,
 				EC858EA32A12AB5100FFC363 /* FirebaseStorage */,
+				ECBA27112A12C931006E0693 /* SDWebImage */,
 			);
 			productName = "Tik-Tok";
 			productReference = EC858E5F2A12782E00FFC363 /* Tik-Tok.app */;
@@ -223,6 +226,7 @@
 			mainGroup = EC858E562A12782D00FFC363;
 			packageReferences = (
 				EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = EC858E602A12782E00FFC363 /* Products */;
 			projectDirPath = "";
@@ -496,6 +500,14 @@
 				kind = branch;
 			};
 		};
+		ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -523,6 +535,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		ECBA27112A12C931006E0693 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
