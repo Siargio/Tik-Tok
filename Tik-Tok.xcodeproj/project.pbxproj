@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D4DCEB741066EE0B8D72486D /* Pods_Tik_Tok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */; };
+		EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */; };
+		EC3A275D2A136FFE00BAA768 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A275C2A136FFE00BAA768 /* Model.swift */; };
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
 		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
@@ -41,6 +43,8 @@
 		31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.debug.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.debug.xcconfig"; sourceTree = "<group>"; };
 		71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.release.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.release.xcconfig"; sourceTree = "<group>"; };
 		8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tik_Tok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		EC3A275C2A136FFE00BAA768 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +94,6 @@
 				31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */,
 				71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +103,22 @@
 				8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC3A27582A1362C200BAA768 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC3A275B2A136FF500BAA768 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC3A275C2A136FFE00BAA768 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EC858E562A12782D00FFC363 = {
@@ -124,8 +143,10 @@
 			isa = PBXGroup;
 			children = (
 				EC858E782A127BF500FFC363 /* App */,
+				EC3A275B2A136FF500BAA768 /* Model */,
 				EC858E8F2A127F5300FFC363 /* Manager */,
 				EC858E772A127BE800FFC363 /* Controllers */,
+				EC3A27582A1362C200BAA768 /* Extensions */,
 				EC858E762A127BDC00FFC363 /* Resources */,
 			);
 			path = "Tik-Tok";
@@ -253,7 +274,7 @@
 			mainGroup = EC858E562A12782D00FFC363;
 			packageReferences = (
 				EC858E9A2A12AB5100FFC363 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+				ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = EC858E602A12782E00FFC363 /* Products */;
 			projectDirPath = "";
@@ -330,6 +351,7 @@
 				EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */,
 				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
 				EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */,
+				EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */,
 				EC858E882A127ED800FFC363 /* SingUpViewController.swift in Sources */,
 				EC858E8C2A127F0700FFC363 /* TabBarViewController.swift in Sources */,
 				EC858E842A127EB800FFC363 /* UserListViewController.swift in Sources */,
@@ -338,6 +360,7 @@
 				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
 				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
 				EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */,
+				EC3A275D2A136FFE00BAA768 /* Model.swift in Sources */,
 				EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */,
 				EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */,
 				EC858E912A127F6800FFC363 /* APICall.swift in Sources */,
@@ -571,7 +594,7 @@
 				kind = branch;
 			};
 		};
-		ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+		ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
 			requirement = {
@@ -609,7 +632,7 @@
 		};
 		ECBA27112A12C931006E0693 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			package = ECBA27102A12C931006E0693 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
