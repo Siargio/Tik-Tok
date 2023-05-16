@@ -11,6 +11,8 @@ struct PostModel {
 
     let identifier: String
 
+    var isLikedByCurrentUser = false
+    
     static func mockModels() -> [PostModel] {
         var posts = [PostModel]()
         for _ in 0...100 {
