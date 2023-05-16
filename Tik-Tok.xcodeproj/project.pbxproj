@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		D4DCEB741066EE0B8D72486D /* Pods_Tik_Tok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */; };
 		EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */; };
-		EC3A275D2A136FFE00BAA768 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A275C2A136FFE00BAA768 /* Model.swift */; };
+		EC3A275D2A136FFE00BAA768 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A275C2A136FFE00BAA768 /* PostModel.swift */; };
+		EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C625B2A13C5400016428F /* CommentsViewController.swift */; };
+		EC4C625E2A13E8090016428F /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C625D2A13E8090016428F /* PostComment.swift */; };
+		EC4C62622A140E770016428F /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62612A140E770016428F /* CommentTableViewCell.swift */; };
+		EC4C62642A1410F40016428F /* UIString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62632A1410F40016428F /* UIString+Ext.swift */; };
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
 		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
@@ -44,7 +48,11 @@
 		71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.release.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.release.xcconfig"; sourceTree = "<group>"; };
 		8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tik_Tok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
-		EC3A275C2A136FFE00BAA768 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EC3A275C2A136FFE00BAA768 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		EC4C625B2A13C5400016428F /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		EC4C625D2A13E8090016428F /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
+		EC4C62612A140E770016428F /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		EC4C62632A1410F40016428F /* UIString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Ext.swift"; sourceTree = "<group>"; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */,
+				EC4C62632A1410F40016428F /* UIString+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -116,9 +125,26 @@
 		EC3A275B2A136FF500BAA768 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EC3A275C2A136FFE00BAA768 /* Model.swift */,
+				EC3A275C2A136FFE00BAA768 /* PostModel.swift */,
+				EC4C625D2A13E8090016428F /* PostComment.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EC4C625F2A140E420016428F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC4C62602A140E520016428F /* Other */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC4C62602A140E520016428F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EC4C62612A140E770016428F /* CommentTableViewCell.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 		EC858E562A12782D00FFC363 = {
@@ -145,6 +171,7 @@
 				EC858E782A127BF500FFC363 /* App */,
 				EC3A275B2A136FF500BAA768 /* Model */,
 				EC858E8F2A127F5300FFC363 /* Manager */,
+				EC4C625F2A140E420016428F /* View */,
 				EC858E772A127BE800FFC363 /* Controllers */,
 				EC3A27582A1362C200BAA768 /* Extensions */,
 				EC858E762A127BDC00FFC363 /* Resources */,
@@ -202,6 +229,7 @@
 				EC858E872A127ED800FFC363 /* SingUpViewController.swift */,
 				EC858E892A127EE400FFC363 /* SettingsViewController.swift */,
 				EC858E8D2A127F4700FFC363 /* PostViewController.swift */,
+				EC4C625B2A13C5400016428F /* CommentsViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -348,8 +376,11 @@
 				EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */,
 				EC858E952A127FA400FFC363 /* DataBaseManager.swift in Sources */,
 				EC858E862A127EC900FFC363 /* SingInViewController.swift in Sources */,
+				EC4C62622A140E770016428F /* CommentTableViewCell.swift in Sources */,
 				EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */,
 				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
+				EC4C62642A1410F40016428F /* UIString+Ext.swift in Sources */,
+				EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */,
 				EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */,
 				EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */,
 				EC858E882A127ED800FFC363 /* SingUpViewController.swift in Sources */,
@@ -359,8 +390,9 @@
 				EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */,
 				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
 				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
+				EC4C625E2A13E8090016428F /* PostComment.swift in Sources */,
 				EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */,
-				EC3A275D2A136FFE00BAA768 /* Model.swift in Sources */,
+				EC3A275D2A136FFE00BAA768 /* PostModel.swift in Sources */,
 				EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */,
 				EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */,
 				EC858E912A127F6800FFC363 /* APICall.swift in Sources */,

@@ -7,8 +7,15 @@
 
 import UIKit
 
+protocol PostViewControllerDelegate: AnyObject {
+    func postViewController(_ vc: PostViewController, didTapCommentButtonFor post: PostModel)
+}
+
 class PostViewController: UIViewController {
+
+    //MARK: - Properties
     
+    weak var delegate: PostViewControllerDelegate?
     var model: PostModel
 
     //MARK: - UIElements
@@ -116,8 +123,7 @@ class PostViewController: UIViewController {
     }
 
     @objc private func didTapComment() {
-        //Present comment tray
-
+        delegate?.postViewController(self, didTapCommentButtonFor: model)
     }
 
     @objc private func didTapShare() {
