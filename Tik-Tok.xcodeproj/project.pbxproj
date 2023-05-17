@@ -14,6 +14,15 @@
 		EC4C625E2A13E8090016428F /* PostComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C625D2A13E8090016428F /* PostComment.swift */; };
 		EC4C62622A140E770016428F /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62612A140E770016428F /* CommentTableViewCell.swift */; };
 		EC4C62642A1410F40016428F /* UIString+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62632A1410F40016428F /* UIString+Ext.swift */; };
+		EC4C62662A14E7600016428F /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = EC4C62652A14E7600016428F /* video.mp4 */; };
+		EC4C62682A1512750016428F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62672A1512750016428F /* User.swift */; };
+		EC4C626A2A1512900016428F /* ExploreSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62692A1512900016428F /* ExploreSection.swift */; };
+		EC4C626C2A1512BD0016428F /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C626B2A1512BD0016428F /* ExploreCell.swift */; };
+		EC4C626E2A1512E40016428F /* ExploreSectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C626D2A1512E40016428F /* ExploreSectionType.swift */; };
+		EC4C62712A15148A0016428F /* ExploreBannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62702A15148A0016428F /* ExploreBannerViewModel.swift */; };
+		EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62722A1514A30016428F /* ExplorePostViewModel.swift */; };
+		EC4C62752A1514B80016428F /* ExploreHashtagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62742A1514B80016428F /* ExploreHashtagViewModel.swift */; };
+		EC4C62772A1514D70016428F /* ExploreUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62762A1514D70016428F /* ExploreUserViewModel.swift */; };
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
 		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
@@ -53,6 +62,15 @@
 		EC4C625D2A13E8090016428F /* PostComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComment.swift; sourceTree = "<group>"; };
 		EC4C62612A140E770016428F /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		EC4C62632A1410F40016428F /* UIString+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIString+Ext.swift"; sourceTree = "<group>"; };
+		EC4C62652A14E7600016428F /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		EC4C62672A1512750016428F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EC4C62692A1512900016428F /* ExploreSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSection.swift; sourceTree = "<group>"; };
+		EC4C626B2A1512BD0016428F /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		EC4C626D2A1512E40016428F /* ExploreSectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreSectionType.swift; sourceTree = "<group>"; };
+		EC4C62702A15148A0016428F /* ExploreBannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreBannerViewModel.swift; sourceTree = "<group>"; };
+		EC4C62722A1514A30016428F /* ExplorePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostViewModel.swift; sourceTree = "<group>"; };
+		EC4C62742A1514B80016428F /* ExploreHashtagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagViewModel.swift; sourceTree = "<group>"; };
+		EC4C62762A1514D70016428F /* ExploreUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserViewModel.swift; sourceTree = "<group>"; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +145,10 @@
 			children = (
 				EC3A275C2A136FFE00BAA768 /* PostModel.swift */,
 				EC4C625D2A13E8090016428F /* PostComment.swift */,
+				EC4C62672A1512750016428F /* User.swift */,
+				EC4C62692A1512900016428F /* ExploreSection.swift */,
+				EC4C626B2A1512BD0016428F /* ExploreCell.swift */,
+				EC4C626D2A1512E40016428F /* ExploreSectionType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +167,17 @@
 				EC4C62612A140E770016428F /* CommentTableViewCell.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		EC4C626F2A15145E0016428F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EC4C62702A15148A0016428F /* ExploreBannerViewModel.swift */,
+				EC4C62722A1514A30016428F /* ExplorePostViewModel.swift */,
+				EC4C62742A1514B80016428F /* ExploreHashtagViewModel.swift */,
+				EC4C62762A1514D70016428F /* ExploreUserViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EC858E562A12782D00FFC363 = {
@@ -169,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				EC858E782A127BF500FFC363 /* App */,
+				EC4C626F2A15145E0016428F /* ViewModel */,
 				EC3A275B2A136FF500BAA768 /* Model */,
 				EC858E8F2A127F5300FFC363 /* Manager */,
 				EC4C625F2A140E420016428F /* View */,
@@ -182,6 +216,7 @@
 		EC858E762A127BDC00FFC363 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC4C62652A14E7600016428F /* video.mp4 */,
 				EC858E6B2A12782F00FFC363 /* Assets.xcassets */,
 				EC858E6D2A12782F00FFC363 /* LaunchScreen.storyboard */,
 				EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */,
@@ -318,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4C62662A14E7600016428F /* video.mp4 in Resources */,
 				EC858E6F2A12782F00FFC363 /* LaunchScreen.storyboard in Resources */,
 				EC858E6C2A12782F00FFC363 /* Assets.xcassets in Resources */,
 				EC858EA62A12AC4700FFC363 /* GoogleService-Info.plist in Resources */,
@@ -376,9 +412,13 @@
 				EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */,
 				EC858E952A127FA400FFC363 /* DataBaseManager.swift in Sources */,
 				EC858E862A127EC900FFC363 /* SingInViewController.swift in Sources */,
+				EC4C62682A1512750016428F /* User.swift in Sources */,
 				EC4C62622A140E770016428F /* CommentTableViewCell.swift in Sources */,
+				EC4C626A2A1512900016428F /* ExploreSection.swift in Sources */,
 				EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */,
 				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
+				EC4C62712A15148A0016428F /* ExploreBannerViewModel.swift in Sources */,
+				EC4C626C2A1512BD0016428F /* ExploreCell.swift in Sources */,
 				EC4C62642A1410F40016428F /* UIString+Ext.swift in Sources */,
 				EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */,
 				EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */,
@@ -389,14 +429,18 @@
 				EC858E822A127E1000FFC363 /* ProfileViewController.swift in Sources */,
 				EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */,
 				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
+				EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */,
 				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
 				EC4C625E2A13E8090016428F /* PostComment.swift in Sources */,
+				EC4C626E2A1512E40016428F /* ExploreSectionType.swift in Sources */,
 				EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */,
 				EC3A275D2A136FFE00BAA768 /* PostModel.swift in Sources */,
 				EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */,
 				EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */,
+				EC4C62752A1514B80016428F /* ExploreHashtagViewModel.swift in Sources */,
 				EC858E912A127F6800FFC363 /* APICall.swift in Sources */,
 				EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */,
+				EC4C62772A1514D70016428F /* ExploreUserViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
