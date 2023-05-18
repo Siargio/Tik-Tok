@@ -8,8 +8,8 @@
 import UIKit
 
 struct ExploreUserViewModel {
-    let profilePictureURL: URL?
+    let profilePicture: UIImage?
     let username : String
-    let followCount: Int
+    let followerCount: Int
     let handler: (() -> Void)
 }
