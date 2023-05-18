@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D4DCEB741066EE0B8D72486D /* Pods_Tik_Tok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */; };
+		EC127F3B2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */; };
+		EC127F3D2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC127F3C2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift */; };
+		EC127F3F2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC127F3E2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift */; };
 		EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */; };
 		EC3A275D2A136FFE00BAA768 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3A275C2A136FFE00BAA768 /* PostModel.swift */; };
 		EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C625B2A13C5400016428F /* CommentsViewController.swift */; };
@@ -23,6 +26,9 @@
 		EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62722A1514A30016428F /* ExplorePostViewModel.swift */; };
 		EC4C62752A1514B80016428F /* ExploreHashtagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62742A1514B80016428F /* ExploreHashtagViewModel.swift */; };
 		EC4C62772A1514D70016428F /* ExploreUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C62762A1514D70016428F /* ExploreUserViewModel.swift */; };
+		EC4C62792A154E250016428F /* explore.json in Resources */ = {isa = PBXBuildFile; fileRef = EC4C62782A154E250016428F /* explore.json */; };
+		EC4C627B2A155AC60016428F /* ExploreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C627A2A155AC60016428F /* ExploreManager.swift */; };
+		EC4C627D2A1583010016428F /* ExploreUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */; };
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
 		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
@@ -56,6 +62,9 @@
 		31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.debug.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.debug.xcconfig"; sourceTree = "<group>"; };
 		71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.release.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.release.xcconfig"; sourceTree = "<group>"; };
 		8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tik_Tok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC127F3C2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostsCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC127F3E2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreBannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC3A27592A1362DC00BAA768 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		EC3A275C2A136FFE00BAA768 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		EC4C625B2A13C5400016428F /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +80,9 @@
 		EC4C62722A1514A30016428F /* ExplorePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostViewModel.swift; sourceTree = "<group>"; };
 		EC4C62742A1514B80016428F /* ExploreHashtagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagViewModel.swift; sourceTree = "<group>"; };
 		EC4C62762A1514D70016428F /* ExploreUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserViewModel.swift; sourceTree = "<group>"; };
+		EC4C62782A154E250016428F /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
+		EC4C627A2A155AC60016428F /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
+		EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +177,10 @@
 			isa = PBXGroup;
 			children = (
 				EC4C62612A140E770016428F /* CommentTableViewCell.swift */,
+				EC127F3E2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift */,
+				EC127F3C2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift */,
+				EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */,
+				EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -216,6 +232,7 @@
 		EC858E762A127BDC00FFC363 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EC4C62782A154E250016428F /* explore.json */,
 				EC4C62652A14E7600016428F /* video.mp4 */,
 				EC858E6B2A12782F00FFC363 /* Assets.xcassets */,
 				EC858E6D2A12782F00FFC363 /* LaunchScreen.storyboard */,
@@ -277,6 +294,7 @@
 				EC858E942A127FA400FFC363 /* DataBaseManager.swift */,
 				EC858E962A127FCA00FFC363 /* AuthenticationManager.swift */,
 				EC858E982A127FE800FFC363 /* HapticsManager.swift */,
+				EC4C627A2A155AC60016428F /* ExploreManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -354,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4C62662A14E7600016428F /* video.mp4 in Resources */,
+				EC4C62792A154E250016428F /* explore.json in Resources */,
 				EC858E6F2A12782F00FFC363 /* LaunchScreen.storyboard in Resources */,
 				EC858E6C2A12782F00FFC363 /* Assets.xcassets in Resources */,
 				EC858EA62A12AC4700FFC363 /* GoogleService-Info.plist in Resources */,
@@ -410,18 +429,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */,
+				EC127F3B2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift in Sources */,
 				EC858E952A127FA400FFC363 /* DataBaseManager.swift in Sources */,
 				EC858E862A127EC900FFC363 /* SingInViewController.swift in Sources */,
 				EC4C62682A1512750016428F /* User.swift in Sources */,
 				EC4C62622A140E770016428F /* CommentTableViewCell.swift in Sources */,
 				EC4C626A2A1512900016428F /* ExploreSection.swift in Sources */,
 				EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */,
+				EC127F3F2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift in Sources */,
 				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
 				EC4C62712A15148A0016428F /* ExploreBannerViewModel.swift in Sources */,
 				EC4C626C2A1512BD0016428F /* ExploreCell.swift in Sources */,
 				EC4C62642A1410F40016428F /* UIString+Ext.swift in Sources */,
 				EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */,
 				EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */,
+				EC4C627B2A155AC60016428F /* ExploreManager.swift in Sources */,
 				EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */,
 				EC858E882A127ED800FFC363 /* SingUpViewController.swift in Sources */,
 				EC858E8C2A127F0700FFC363 /* TabBarViewController.swift in Sources */,
@@ -429,6 +451,7 @@
 				EC858E822A127E1000FFC363 /* ProfileViewController.swift in Sources */,
 				EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */,
 				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
+				EC4C627D2A1583010016428F /* ExploreUserCollectionViewCell.swift in Sources */,
 				EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */,
 				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
 				EC4C625E2A13E8090016428F /* PostComment.swift in Sources */,
@@ -436,6 +459,7 @@
 				EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */,
 				EC3A275D2A136FFE00BAA768 /* PostModel.swift in Sources */,
 				EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */,
+				EC127F3D2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift in Sources */,
 				EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */,
 				EC4C62752A1514B80016428F /* ExploreHashtagViewModel.swift in Sources */,
 				EC858E912A127F6800FFC363 /* APICall.swift in Sources */,
