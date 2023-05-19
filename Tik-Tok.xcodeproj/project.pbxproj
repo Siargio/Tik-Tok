@@ -34,6 +34,8 @@
 		EC5B32222A17510300A09014 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B32212A17510300A09014 /* FirebaseCrashlytics */; };
 		EC5B32242A17510300A09014 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B32232A17510300A09014 /* FirebaseDatabase */; };
 		EC5B32262A17510300A09014 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B32252A17510300A09014 /* FirebaseStorage */; };
+		EC5B32292A1765C600A09014 /* AuthField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B32282A1765C600A09014 /* AuthField.swift */; };
+		EC5B322B2A17660D00A09014 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5B322A2A17660D00A09014 /* AuthButton.swift */; };
 		EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E622A12782E00FFC363 /* AppDelegate.swift */; };
 		EC858E652A12782E00FFC363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E642A12782E00FFC363 /* SceneDelegate.swift */; };
 		EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E662A12782E00FFC363 /* HomeViewController.swift */; };
@@ -82,6 +84,8 @@
 		EC4C62782A154E250016428F /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
 		EC4C627A2A155AC60016428F /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
 		EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC5B32282A1765C600A09014 /* AuthField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthField.swift; sourceTree = "<group>"; };
+		EC5B322A2A17660D00A09014 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC858E622A12782E00FFC363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC858E642A12782E00FFC363 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				EC127F3C2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift */,
 				EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */,
 				EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */,
+				EC5B32282A1765C600A09014 /* AuthField.swift */,
+				EC5B322A2A17660D00A09014 /* AuthButton.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -192,6 +198,15 @@
 				EC4C62762A1514D70016428F /* ExploreUserViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EC5B32272A175D5500A09014 /* Autch */ = {
+			isa = PBXGroup;
+			children = (
+				EC858E852A127EC900FFC363 /* SingInViewController.swift */,
+				EC858E872A127ED800FFC363 /* SingUpViewController.swift */,
+			);
+			path = Autch;
 			sourceTree = "<group>";
 		};
 		EC858E562A12782D00FFC363 = {
@@ -274,9 +289,8 @@
 		EC858E7A2A127CBA00FFC363 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				EC5B32272A175D5500A09014 /* Autch */,
 				EC858E832A127EB800FFC363 /* UserListViewController.swift */,
-				EC858E852A127EC900FFC363 /* SingInViewController.swift */,
-				EC858E872A127ED800FFC363 /* SingUpViewController.swift */,
 				EC858E892A127EE400FFC363 /* SettingsViewController.swift */,
 				EC858E8D2A127F4700FFC363 /* PostViewController.swift */,
 				EC4C625B2A13C5400016428F /* CommentsViewController.swift */,
@@ -425,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */,
+				EC5B322B2A17660D00A09014 /* AuthButton.swift in Sources */,
 				EC127F3B2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift in Sources */,
 				EC858E952A127FA400FFC363 /* DataBaseManager.swift in Sources */,
 				EC858E862A127EC900FFC363 /* SingInViewController.swift in Sources */,
@@ -448,6 +463,7 @@
 				EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */,
 				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
 				EC4C627D2A1583010016428F /* ExploreUserCollectionViewCell.swift in Sources */,
+				EC5B32292A1765C600A09014 /* AuthField.swift in Sources */,
 				EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */,
 				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
 				EC4C625E2A13E8090016428F /* PostComment.swift in Sources */,

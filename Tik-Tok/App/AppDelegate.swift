@@ -23,6 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FirebaseApp.configure()
 
+//        AuthManager.shared.singOut { _ in
+//
+//        }
+
         return true
     }
 
