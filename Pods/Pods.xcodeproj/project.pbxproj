@@ -49,6 +49,7 @@
 		E2929FF9D75EE39A9A0A55D4EE165058 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 87BE3AF5E703D67BAD9B2259E68A24ED /* ro.lproj */; };
 		E4CA0B80D962B7042730CCA24DF7A6CE /* Appirater.h in Headers */ = {isa = PBXBuildFile; fileRef = D8EBEDD85E1C57D0840DFE3F53B46585 /* Appirater.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB576A6461F6B13C4097AD26DF6AF7F4 /* hy.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D99FA108D76B5D4A2556336B8F18ED68 /* hy.lproj */; };
+		EC92F65C2A17492100054B9B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = EC92F65B2A17492100054B9B /* SDWebImage */; };
 		F32857599784BD608DA01704CCEBA031 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B3F2CC456C71FF62006B16A11E467083 /* ja.lproj */; };
 		F931110D1BB01A7A8CEEF1C83CA8B8F0 /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BF6D001E9D7B5A767AF64599E9301DFE /* ar.lproj */; };
 		F9E8DD617512C8587879D1090EE97435 /* da.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9DD1DFC5EC686CB871C9528EF1646747 /* da.lproj */; };
@@ -73,7 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05D9C98FC359B3C88AD0178C367801B3 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = es.lproj; sourceTree = "<group>"; };
+		05D9C98FC359B3C88AD0178C367801B3 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = es.lproj; sourceTree = "<group>"; };
 		098D7BB4165870DD3852D7B0A30B2EF5 /* Appirater.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appirater.release.xcconfig; sourceTree = "<group>"; };
 		145D0F7A5529BDA9BF01D16309739EE1 /* Appirater-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appirater-umbrella.h"; sourceTree = "<group>"; };
 		19586DB6086D2F95EC4A12EB761DF8BE /* Pods-Tik-Tok */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Tik-Tok"; path = Pods_Tik_Tok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,56 +83,56 @@
 		1FC05A9F938F8399BEBF322F6E905973 /* Pods-Tik-Tok-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tik-Tok-umbrella.h"; sourceTree = "<group>"; };
 		23D4D9F87518207E73E88D8FBC7C8DE3 /* Appirater */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Appirater; path = Appirater.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E2A3A8AC4BBC9CF3A22A29CB7D84E2 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		2C73CE34EF9B1480101D04AE118D9A37 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fr.lproj; sourceTree = "<group>"; };
-		341983AA4B6FBAA2B8C1740A8EA7F375 /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "pt-BR.lproj"; sourceTree = "<group>"; };
-		3C8E7C419C849CA26CBBFEBB00BB7645 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
+		2C73CE34EF9B1480101D04AE118D9A37 /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fr.lproj; sourceTree = "<group>"; };
+		341983AA4B6FBAA2B8C1740A8EA7F375 /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "pt-BR.lproj"; sourceTree = "<group>"; };
+		3C8E7C419C849CA26CBBFEBB00BB7645 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hans.lproj"; sourceTree = "<group>"; };
 		3E828CF164BCFD02A6A1F18E70222953 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		44D5632E65D206FE9D5EB02C0C8B415E /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = tr.lproj; sourceTree = "<group>"; };
-		4635E20AEC5108FDE3D6C9BCEDB02D19 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fi.lproj; sourceTree = "<group>"; };
-		4A3F4D7A8E4A87535AE26491B95756BB /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = uk.lproj; sourceTree = "<group>"; };
+		44D5632E65D206FE9D5EB02C0C8B415E /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = tr.lproj; sourceTree = "<group>"; };
+		4635E20AEC5108FDE3D6C9BCEDB02D19 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fi.lproj; sourceTree = "<group>"; };
+		4A3F4D7A8E4A87535AE26491B95756BB /* uk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = uk.lproj; sourceTree = "<group>"; };
 		4ACFAE576E35648B7B28A99E418A1AB8 /* Appirater-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Appirater-prefix.pch"; sourceTree = "<group>"; };
-		5ABC53B8E8DB48857702E03390003EA0 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = cs.lproj; sourceTree = "<group>"; };
-		5FA8436F1407A1D19327D62598E02BD7 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ru.lproj; sourceTree = "<group>"; };
+		5ABC53B8E8DB48857702E03390003EA0 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = cs.lproj; sourceTree = "<group>"; };
+		5FA8436F1407A1D19327D62598E02BD7 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ru.lproj; sourceTree = "<group>"; };
 		63731D8F6C5C2F12DC0E5D9A09454747 /* Pods-Tik-Tok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tik-Tok.release.xcconfig"; sourceTree = "<group>"; };
-		692112D7E8BC841939C48B442C168D0D /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = el.lproj; sourceTree = "<group>"; };
-		7357B37C08CEED2250F7D13CE2E755DB /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sv.lproj; sourceTree = "<group>"; };
-		7B68993E8D881534926B3C57585096FC /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
-		82B16F71DF1205CC86659BCCB2E498CB /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = fa.lproj; sourceTree = "<group>"; };
-		87BE3AF5E703D67BAD9B2259E68A24ED /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ro.lproj; sourceTree = "<group>"; };
+		692112D7E8BC841939C48B442C168D0D /* el.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = el.lproj; sourceTree = "<group>"; };
+		7357B37C08CEED2250F7D13CE2E755DB /* sv.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sv.lproj; sourceTree = "<group>"; };
+		7B68993E8D881534926B3C57585096FC /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = "zh-Hant.lproj"; sourceTree = "<group>"; };
+		82B16F71DF1205CC86659BCCB2E498CB /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = fa.lproj; sourceTree = "<group>"; };
+		87BE3AF5E703D67BAD9B2259E68A24ED /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ro.lproj; sourceTree = "<group>"; };
 		89FDBB0F4B1ADB7CC69FF34882606673 /* Appirater.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Appirater.debug.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DD1DFC5EC686CB871C9528EF1646747 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = da.lproj; sourceTree = "<group>"; };
-		9EF6BE0CC2E68EFAD2736A0B9CF88CDE /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ms.lproj; sourceTree = "<group>"; };
-		A4D7BE5090E7299DB21B6DF3ABCF149D /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = he.lproj; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DD1DFC5EC686CB871C9528EF1646747 /* da.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = da.lproj; sourceTree = "<group>"; };
+		9EF6BE0CC2E68EFAD2736A0B9CF88CDE /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ms.lproj; sourceTree = "<group>"; };
+		A4D7BE5090E7299DB21B6DF3ABCF149D /* he.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = he.lproj; sourceTree = "<group>"; };
 		A4E2A8AB80F1561EDCC3CC134E319583 /* Pods-Tik-Tok-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tik-Tok-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A4E7A7A0319FC95B23982B926716630A /* ResourceBundle-Appirater-Appirater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Appirater-Appirater-Info.plist"; sourceTree = "<group>"; };
-		A5BADFE6DC3909088569B56109F0AF18 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = de.lproj; sourceTree = "<group>"; };
-		AD8D0B010B34C0FCE42DA81E82ACA802 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ko.lproj; sourceTree = "<group>"; };
-		B238246CE9F14C07EA37E29ABFE38CFB /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pt.lproj; sourceTree = "<group>"; };
-		B2D76D6143869D88D221FCC9687CBD64 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = id.lproj; sourceTree = "<group>"; };
-		B2E3388BABC43E1520F9E83552ABAD9F /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = en.lproj; sourceTree = "<group>"; };
-		B3F2CC456C71FF62006B16A11E467083 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ja.lproj; sourceTree = "<group>"; };
+		A5BADFE6DC3909088569B56109F0AF18 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = de.lproj; sourceTree = "<group>"; };
+		AD8D0B010B34C0FCE42DA81E82ACA802 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ko.lproj; sourceTree = "<group>"; };
+		B238246CE9F14C07EA37E29ABFE38CFB /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pt.lproj; sourceTree = "<group>"; };
+		B2D76D6143869D88D221FCC9687CBD64 /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = id.lproj; sourceTree = "<group>"; };
+		B2E3388BABC43E1520F9E83552ABAD9F /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = en.lproj; sourceTree = "<group>"; };
+		B3F2CC456C71FF62006B16A11E467083 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ja.lproj; sourceTree = "<group>"; };
 		B696849AAF54477C62936C9284CC2BCE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		BD6B7F90ED9CEFE70BDCDEE2FAB76417 /* Pods-Tik-Tok-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tik-Tok-acknowledgements.plist"; sourceTree = "<group>"; };
 		BF4BB1F7DDBDDFBA803BA21E972FB4A9 /* Pods-Tik-Tok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tik-Tok.debug.xcconfig"; sourceTree = "<group>"; };
-		BF6D001E9D7B5A767AF64599E9301DFE /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ar.lproj; sourceTree = "<group>"; };
-		C4CB8932280FCEA53C832D0D728EB3F6 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nl.lproj; sourceTree = "<group>"; };
+		BF6D001E9D7B5A767AF64599E9301DFE /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ar.lproj; sourceTree = "<group>"; };
+		C4CB8932280FCEA53C832D0D728EB3F6 /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nl.lproj; sourceTree = "<group>"; };
 		C63977C94BAE2213528C40CD7F190C09 /* AppiraterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = AppiraterDelegate.h; sourceTree = "<group>"; };
-		C71E2E1B1B486C990693944188E60AAE /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = vi.lproj; sourceTree = "<group>"; };
+		C71E2E1B1B486C990693944188E60AAE /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = vi.lproj; sourceTree = "<group>"; };
 		CA1BEC94ED0451BEFAB14AE759D068FB /* Pods-Tik-Tok-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tik-Tok-Info.plist"; sourceTree = "<group>"; };
-		CF66B0E4806561F2240387432AF747FB /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = nb.lproj; sourceTree = "<group>"; };
-		D30B7452A00CBE3C12CF54228E3D5814 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = pl.lproj; sourceTree = "<group>"; };
-		D7CE4FBD421D90BEC11DA499DD69F1CA /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = th.lproj; sourceTree = "<group>"; };
+		CF66B0E4806561F2240387432AF747FB /* nb.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = nb.lproj; sourceTree = "<group>"; };
+		D30B7452A00CBE3C12CF54228E3D5814 /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = pl.lproj; sourceTree = "<group>"; };
+		D7CE4FBD421D90BEC11DA499DD69F1CA /* th.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = th.lproj; sourceTree = "<group>"; };
 		D8EBEDD85E1C57D0840DFE3F53B46585 /* Appirater.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Appirater.h; sourceTree = "<group>"; };
-		D99FA108D76B5D4A2556336B8F18ED68 /* hy.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hy.lproj; sourceTree = "<group>"; };
+		D99FA108D76B5D4A2556336B8F18ED68 /* hy.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = hy.lproj; sourceTree = "<group>"; };
 		DD252E1D23280D5038509CB0ED185F37 /* Appirater.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Appirater.modulemap; sourceTree = "<group>"; };
-		DFC89960D73982E73A25D9AF889BB277 /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = ca.lproj; sourceTree = "<group>"; };
+		DFC89960D73982E73A25D9AF889BB277 /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = ca.lproj; sourceTree = "<group>"; };
 		E1A6C23C570075739358C3F96C2671BB /* Appirater-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Appirater-Info.plist"; sourceTree = "<group>"; };
-		E5516C419550D60DD228FE3A8678FED5 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = sk.lproj; sourceTree = "<group>"; };
-		E67B1C004ACE190BDE4A3A665B34703E /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = it.lproj; sourceTree = "<group>"; };
+		E5516C419550D60DD228FE3A8678FED5 /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = sk.lproj; sourceTree = "<group>"; };
+		E67B1C004ACE190BDE4A3A665B34703E /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = it.lproj; sourceTree = "<group>"; };
 		EA4AEE4D95B204121D54CA098BE839F1 /* Appirater-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Appirater-dummy.m"; sourceTree = "<group>"; };
 		EE382DAEFB9771608F9ADB6F4937D663 /* Appirater.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Appirater.m; sourceTree = "<group>"; };
-		F2BA5D47CC59EA898BC5D4AC38A05601 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; path = hu.lproj; sourceTree = "<group>"; };
+		F2BA5D47CC59EA898BC5D4AC38A05601 /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; path = hu.lproj; sourceTree = "<group>"; };
 		F96F2CB6409803B3C0220B35DB5CDA53 /* Pods-Tik-Tok.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tik-Tok.modulemap"; sourceTree = "<group>"; };
 		F9FA5865D1E6E7D3C957E21EE0AC8216 /* Pods-Tik-Tok-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tik-Tok-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +152,7 @@
 			files = (
 				2DD7B33B4FB4F06F6BDB9FDE23463CCC /* CFNetwork.framework in Frameworks */,
 				B5C56C4D45E7E7A9630F9417A6E39C1D /* Foundation.framework in Frameworks */,
+				EC92F65C2A17492100054B9B /* SDWebImage in Frameworks */,
 				7061D35639F93885B8A80B3B7FE090F7 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +305,6 @@
 				E270A1CC6E3E201FB6AD5B97E027D3B8 /* Resources */,
 				97D73344215476F1FC3E80F9B14CC700 /* Support Files */,
 			);
-			name = Appirater;
 			path = Appirater;
 			sourceTree = "<group>";
 		};
@@ -365,6 +366,9 @@
 				ADDDAC6C1306CDB303673D3A4BADD6A1 /* PBXTargetDependency */,
 			);
 			name = Appirater;
+			packageProductDependencies = (
+				EC92F65B2A17492100054B9B /* SDWebImage */,
+			);
 			productName = Appirater;
 			productReference = 23D4D9F87518207E73E88D8FBC7C8DE3 /* Appirater */;
 			productType = "com.apple.product-type.framework";
@@ -437,6 +441,9 @@
 				"zh-Hant",
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			packageReferences = (
+				EC92F65A2A17492100054B9B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 9562672F44706748093887DF0F9B7791 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -896,6 +903,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC92F65A2A17492100054B9B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC92F65B2A17492100054B9B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC92F65A2A17492100054B9B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
