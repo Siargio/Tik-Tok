@@ -9,6 +9,8 @@ import UIKit
 
 final class ExploreViewController: UIViewController {
 
+    //MARK: - Properties
+
     private var sections = [ExploreSection]()
 
     //MARK: - UIElements
@@ -205,7 +207,7 @@ extension ExploreViewController: UISearchBarDelegate {
     }
 }
 
-//MARK: - layout
+//MARK: - Layout
 
 extension ExploreViewController {
     private func layout(for section: Int) -> NSCollectionLayoutSection {
