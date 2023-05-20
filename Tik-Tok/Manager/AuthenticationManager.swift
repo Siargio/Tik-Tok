@@ -40,6 +40,13 @@ final class AuthManager {
                 return
             }
 
+            DatabaseManager.shared.getUsername(for: email) { username in
+                if let username = username {
+                    UserDefaults.standard.set(username, forKey: "username")
+                    print("Got username: \(username)")
+                }
+            }
+
             // Success full sing in
             completion(.success(email))
         }
@@ -47,12 +54,12 @@ final class AuthManager {
 
     public func singUp(with username: String, email: String, password: String, completion: @escaping (Bool) -> Void) {
         // MAKE sure entered username is available
-
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             guard result != nil, error == nil else {
                 completion(false)
                 return
             }
+            UserDefaults.standard.set(username, forKey: "username")
 
             DatabaseManager.shared.insertUser(with: email, username: username, completion: completion)
         }

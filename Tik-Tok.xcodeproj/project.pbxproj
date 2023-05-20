@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D4DCEB741066EE0B8D72486D /* Pods_Tik_Tok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */; };
+		EC06EB0E2A18D56A0067D6EF /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06EB0D2A18D56A0067D6EF /* RecordButton.swift */; };
+		EC06EB102A18DF0A0067D6EF /* CaptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC06EB0F2A18DF0A0067D6EF /* CaptionViewController.swift */; };
+		EC06EB132A192D310067D6EF /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = EC06EB122A192D310067D6EF /* ProgressHUD */; };
 		EC127F3B2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */; };
 		EC127F3D2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC127F3C2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift */; };
 		EC127F3F2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC127F3E2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift */; };
@@ -63,6 +66,8 @@
 		31316598F2408CA1B106D7D6 /* Pods-Tik-Tok.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.debug.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.debug.xcconfig"; sourceTree = "<group>"; };
 		71A109BAF988C9EB55A05E45 /* Pods-Tik-Tok.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tik-Tok.release.xcconfig"; path = "Target Support Files/Pods-Tik-Tok/Pods-Tik-Tok.release.xcconfig"; sourceTree = "<group>"; };
 		8EB443C5B7FAD91AF1EC2ECC /* Pods_Tik_Tok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tik_Tok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC06EB0D2A18D56A0067D6EF /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		EC06EB0F2A18DF0A0067D6EF /* CaptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionViewController.swift; sourceTree = "<group>"; };
 		EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreHashtagCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC127F3C2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExplorePostsCollectionViewCell.swift; sourceTree = "<group>"; };
 		EC127F3E2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreBannerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -117,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC5B32242A17510300A09014 /* FirebaseDatabase in Frameworks */,
+				EC06EB132A192D310067D6EF /* ProgressHUD in Frameworks */,
 				EC5B321E2A17510300A09014 /* FirebaseAnalytics in Frameworks */,
 				EC5B32222A17510300A09014 /* FirebaseCrashlytics in Frameworks */,
 				EC5B32202A17510300A09014 /* FirebaseAuth in Frameworks */,
@@ -185,6 +191,8 @@
 				EC127F3A2A15FA3300BED2A5 /* ExploreHashtagCollectionViewCell.swift */,
 				EC5B32282A1765C600A09014 /* AuthField.swift */,
 				EC5B322A2A17660D00A09014 /* AuthButton.swift */,
+				EC06EB0D2A18D56A0067D6EF /* RecordButton.swift */,
+				EC06EB0F2A18DF0A0067D6EF /* CaptionViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -335,6 +343,7 @@
 				EC5B32212A17510300A09014 /* FirebaseCrashlytics */,
 				EC5B32232A17510300A09014 /* FirebaseDatabase */,
 				EC5B32252A17510300A09014 /* FirebaseStorage */,
+				EC06EB122A192D310067D6EF /* ProgressHUD */,
 			);
 			productName = "Tik-Tok";
 			productReference = EC858E5F2A12782E00FFC363 /* Tik-Tok.app */;
@@ -366,6 +375,7 @@
 			mainGroup = EC858E562A12782D00FFC363;
 			packageReferences = (
 				EC5B321C2A17510300A09014 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				EC06EB112A192D310067D6EF /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 			);
 			productRefGroup = EC858E602A12782E00FFC363 /* Products */;
 			projectDirPath = "";
@@ -447,6 +457,7 @@
 				EC4C62622A140E770016428F /* CommentTableViewCell.swift in Sources */,
 				EC4C626A2A1512900016428F /* ExploreSection.swift in Sources */,
 				EC858E672A12782E00FFC363 /* HomeViewController.swift in Sources */,
+				EC06EB102A18DF0A0067D6EF /* CaptionViewController.swift in Sources */,
 				EC127F3F2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift in Sources */,
 				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
 				EC4C62712A15148A0016428F /* ExploreBannerViewModel.swift in Sources */,
@@ -462,6 +473,7 @@
 				EC858E822A127E1000FFC363 /* ProfileViewController.swift in Sources */,
 				EC858E7E2A127DE200FFC363 /* CameraViewController.swift in Sources */,
 				EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */,
+				EC06EB0E2A18D56A0067D6EF /* RecordButton.swift in Sources */,
 				EC4C627D2A1583010016428F /* ExploreUserCollectionViewCell.swift in Sources */,
 				EC5B32292A1765C600A09014 /* AuthField.swift in Sources */,
 				EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */,
@@ -698,6 +710,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EC06EB112A192D310067D6EF /* XCRemoteSwiftPackageReference "ProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/relatedcode/ProgressHUD";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		EC5B321C2A17510300A09014 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -709,6 +729,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EC06EB122A192D310067D6EF /* ProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC06EB112A192D310067D6EF /* XCRemoteSwiftPackageReference "ProgressHUD" */;
+			productName = ProgressHUD;
+		};
 		EC5B321D2A17510300A09014 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EC5B321C2A17510300A09014 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
