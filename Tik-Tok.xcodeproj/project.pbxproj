@@ -36,6 +36,8 @@
 		EC4C62792A154E250016428F /* explore.json in Resources */ = {isa = PBXBuildFile; fileRef = EC4C62782A154E250016428F /* explore.json */; };
 		EC4C627B2A155AC60016428F /* ExploreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C627A2A155AC60016428F /* ExploreManager.swift */; };
 		EC4C627D2A1583010016428F /* ExploreUserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */; };
+		EC56FE832A1CB248000D61B0 /* ProfileHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56FE822A1CB248000D61B0 /* ProfileHeaderCollectionReusableView.swift */; };
+		EC56FE852A1CC59D000D61B0 /* ProfileHeaderViewModel .swift in Sources */ = {isa = PBXBuildFile; fileRef = EC56FE842A1CC59D000D61B0 /* ProfileHeaderViewModel .swift */; };
 		EC5B321E2A17510300A09014 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B321D2A17510300A09014 /* FirebaseAnalytics */; };
 		EC5B32202A17510300A09014 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B321F2A17510300A09014 /* FirebaseAuth */; };
 		EC5B32222A17510300A09014 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = EC5B32212A17510300A09014 /* FirebaseCrashlytics */; };
@@ -97,6 +99,8 @@
 		EC4C62782A154E250016428F /* explore.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = explore.json; sourceTree = "<group>"; };
 		EC4C627A2A155AC60016428F /* ExploreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreManager.swift; sourceTree = "<group>"; };
 		EC4C627C2A1583010016428F /* ExploreUserCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreUserCollectionViewCell.swift; sourceTree = "<group>"; };
+		EC56FE822A1CB248000D61B0 /* ProfileHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		EC56FE842A1CC59D000D61B0 /* ProfileHeaderViewModel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProfileHeaderViewModel .swift"; sourceTree = "<group>"; };
 		EC5B32282A1765C600A09014 /* AuthField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthField.swift; sourceTree = "<group>"; };
 		EC5B322A2A17660D00A09014 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		EC858E5F2A12782E00FFC363 /* Tik-Tok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tik-Tok.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +182,7 @@
 				EC4C626B2A1512BD0016428F /* ExploreCell.swift */,
 				EC4C626D2A1512E40016428F /* ExploreSectionType.swift */,
 				EC4811A92A1A71FF00E4D9B0 /* Notifications.swift */,
+				EC56FE842A1CC59D000D61B0 /* ProfileHeaderViewModel .swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 				EC06EB0D2A18D56A0067D6EF /* RecordButton.swift */,
 				EC06EB0F2A18DF0A0067D6EF /* CaptionViewController.swift */,
 				EC4811B32A1A78E300E4D9B0 /* Notifications */,
+				EC56FE822A1CB248000D61B0 /* ProfileHeaderCollectionReusableView.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -498,6 +504,7 @@
 				EC127F3F2A15FA6300BED2A5 /* ExploreBannerCollectionViewCell.swift in Sources */,
 				EC858E8A2A127EE400FFC363 /* SettingsViewController.swift in Sources */,
 				EC4C62712A15148A0016428F /* ExploreBannerViewModel.swift in Sources */,
+				EC56FE852A1CC59D000D61B0 /* ProfileHeaderViewModel .swift in Sources */,
 				EC4C626C2A1512BD0016428F /* ExploreCell.swift in Sources */,
 				EC4C62642A1410F40016428F /* UIString+Ext.swift in Sources */,
 				EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */,
@@ -516,6 +523,7 @@
 				EC4C62732A1514A30016428F /* ExplorePostViewModel.swift in Sources */,
 				EC858E7C2A127D9600FFC363 /* ExploreViewController.swift in Sources */,
 				EC4C625E2A13E8090016428F /* PostComment.swift in Sources */,
+				EC56FE832A1CB248000D61B0 /* ProfileHeaderCollectionReusableView.swift in Sources */,
 				EC4811B22A1A78AF00E4D9B0 /* NotificationsPostCommentTableViewCell.swift in Sources */,
 				EC4C626E2A1512E40016428F /* ExploreSectionType.swift in Sources */,
 				EC858E802A127DFB00FFC363 /* NotificationsViewController.swift in Sources */,
