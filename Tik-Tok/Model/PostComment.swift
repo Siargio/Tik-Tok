@@ -14,7 +14,7 @@ struct PostComment {
 
     static func mockComments() -> [PostComment] {
         let user = User(
-            userName: "Kanywest",
+            userName: "kanywest",
             profilePictureURL: nil,
             identifier: UUID().uuidString)
 

@@ -116,7 +116,133 @@ final class DatabaseManager {
         completion(true)
     }
 
-    public func getAllUsers(completion: ([String]) -> Void) {
+    public func getPosts(for user: User, completion: @escaping ([PostModel]) -> Void) {
+        let path = "users/\(user.userName.lowercased())/posts"
+        database.child(path).observeSingleEvent(of: .value) { snapshot in
+            guard let posts = snapshot.value as? [[String: String]] else {
+                completion([])
+                return
+            }
 
+            let models: [PostModel] = posts.compactMap({
+                var model = PostModel(identifier: UUID().uuidString,
+                                      user: user)
+                model.fileName = $0["name"] ?? ""
+                model.caption = $0["caption"] ?? ""
+                return model
+            })
+
+            completion(models)
+        }
+    }
+
+    public func getRelationships(
+        for user: User,
+        type: UserListViewController.ListType,
+        completion: @escaping ([String]) -> Void
+    ) {
+        let path = "users/\(user.userName.lowercased())/\(type.rawValue)"
+
+        database.child(path).observeSingleEvent(of: .value) { snapshot in
+            guard let usernameCollection = snapshot.value as? [String] else {
+                completion([])
+                return
+            }
+
+            completion(usernameCollection)
+        }
+    }
+
+    public func isValidRelationship(
+        for user: User,
+        type: UserListViewController.ListType,
+        completion: @escaping (Bool) -> Void
+    ) {
+        guard let currentUserUsername = UserDefaults.standard.string(forKey: "username")?.lowercased() else {
+            return
+        }
+
+        let path = "users/\(user.userName.lowercased())/\(type.rawValue)"
+
+        database.child(path).observeSingleEvent(of: .value) { snapshot in
+            guard let usernameCollection = snapshot.value as? [String] else {
+                completion(false)
+                return
+            }
+
+            completion(usernameCollection.contains(currentUserUsername))
+        }
+    }
+
+    public func updateRelationship(
+        for user: User,
+        follow: Bool,
+        completion: @escaping (Bool) -> Void
+    ) {
+        guard let currentUserUsername = UserDefaults.standard.string(forKey: "username")?.lowercased() else {
+            return
+        }
+
+        if follow {
+            //follow
+
+            //Insert in current user's following
+            let path = "users/\(currentUserUsername)/following"
+            database.child(path).observeSingleEvent(of: .value) { (snapshot) in
+                let usernameToInsert = user.userName.lowercased()
+                if var current = snapshot.value as? [String] {
+                    current.append(usernameToInsert)
+                    self.database.child(path).setValue(current) { error, _ in
+                        completion(error == nil)
+                    }
+                } else {
+                    self.database.child(path).setValue([usernameToInsert]) { error, _ in
+                        completion(error == nil)
+                    }
+                }
+            }
+
+            //Insert in target users followers
+            let path2 = "users/\(user.userName.lowercased())/followers"
+            database.child(path2).observeSingleEvent(of: .value) { (snapshot) in
+                let usernameToInsert = currentUserUsername.lowercased()
+                if var current = snapshot.value as? [String] {
+                    current.append(usernameToInsert)
+                    self.database.child(path2).setValue(current) { error, _ in
+                        completion(error == nil)
+                    }
+                } else {
+                    self.database.child(path2).setValue([usernameToInsert]) { error, _ in
+                        completion(error == nil)
+                    }
+                }
+            }
+        } else {
+            //unfollow
+
+            //Remove in current user's following
+            let path = "users/\(currentUserUsername)/following"
+            database.child(path).observeSingleEvent(of: .value) { (snapshot) in
+                let usernameToRemove = user.userName.lowercased()
+                if var current = snapshot.value as? [String] {
+                    current.removeAll(where: { $0 == usernameToRemove })
+                    self.database.child(path).setValue(current) { error, _ in
+                        completion(error == nil)
+                    }
+                }
+            }
+
+            //Remove in target users followers
+            let path2 = "users/\(user.userName.lowercased())/followers"
+            database.child(path2).observeSingleEvent(of: .value) { (snapshot) in
+                let usernameToRemove = currentUserUsername.lowercased()
+                if var current = snapshot.value as? [String] {
+                    current.removeAll(where: { $0 == usernameToRemove })
+                    self.database.child(path2).setValue(current) { error, _ in
+                        completion(error == nil)
+                    }
+                }
+            }
+        }
     }
 }

@@ -5,11 +5,30 @@
 //  Created by Sergio on 15.05.23.
 //
 
+import ProgressHUD
 import UIKit
 
 class ProfileViewController: UIViewController {
 
-    let user: User
+    var isCurrentUserProfile: Bool {
+        if let username = UserDefaults.standard.string(forKey: "username") {
+            return user.userName.lowercased() == username.lowercased()
+        }
+        return false
+    }
+
+    enum PicturePickerType {
+        case camera
+        case photoLibrary
+    }
+
+    var user: User
+
+    private var posts = [PostModel]()
+
+    private var followers = [String]()
+    private var following = [String]()
+    private var isFollower: Bool = false
 
     //MARK: - UIElements
 
@@ -24,7 +43,7 @@ class ProfileViewController: UIViewController {
             ProfileHeaderCollectionReusableView.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: ProfileHeaderCollectionReusableView.identifier)
-        collection.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collection.register(PostCollectionViewCell.self, forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
         return collection
     }()
 
@@ -57,6 +76,7 @@ class ProfileViewController: UIViewController {
                 target: self,
                 action: #selector(didTapSettings))
         }
+        fetchPosts()
     }
 
     override func viewDidLayoutSubviews() {
@@ -68,27 +88,42 @@ class ProfileViewController: UIViewController {
         let vc = SettingsViewController()
         navigationController?.pushViewController(vc, animated: true)
     }
+
+    func fetchPosts() {
+        DatabaseManager.shared.getPosts(for: user) { [weak self] postModels in
+            DispatchQueue.main.async {
+                self?.posts = postModels
+                self?.collectionView.reloadData()
+            }
+        }
+    }
 }
 
 //MARK: - UICollectionViewDataSource
 
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        1
-    }
-
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        30
+        posts.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
-        cell.backgroundColor = .systemBlue
+        let postModel = posts[indexPath.row]
+        guard let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: PostCollectionViewCell.identifier, for: indexPath
+        ) as? PostCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        cell.configure(with: postModel)
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        let post = posts[indexPath.row]
+        let vc = PostViewController(model: post)
+        vc.delegate = self
+        vc.title = "Video"
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -113,8 +148,46 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
             return UICollectionReusableView()
         }
         header.delegate = self
-        let viewModel = profileHeaderViewModel(avatarImageURL: nil, followerCount: 120, followingCount: 200, isFollowing: false)
-        header.configure(with: viewModel)
+
+        let group = DispatchGroup()
+        group.enter()
+        group.enter()
+        group.enter()
+
+        DatabaseManager.shared.getRelationships(for: user, type: .followers) { [weak self] followers in
+            defer {
+                group.leave()
+            }
+            self?.followers = followers
+        }
+
+        DatabaseManager.shared.getRelationships(for: user, type: .following) { [weak self] following in
+            defer {
+                group.leave()
+            }
+            self?.following = following
+        }
+
+        DatabaseManager.shared.isValidRelationship(
+            for: user,
+            type: .followers
+        ) { [weak self] isFollower in
+            defer {
+                group.leave()
+            }
+            self?.isFollower = isFollower
+        }
+
+        group.notify(queue: .main) {
+            let viewModel = profileHeaderViewModel(
+                avatarImageURL: self.user.profilePictureURL,
+                followerCount: self.followers.count,
+                followingCount: self.following.count,
+                isFollowing: self.isCurrentUserProfile ? nil : self.isFollower
+            )
+            header.configure(with: viewModel)
+        }
+
         return header
     }
     
@@ -127,24 +200,128 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
 
 extension ProfileViewController: ProfileHeaderCollectionReusableViewDelegate {
     func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapPrimaryButtonWith viewModel: profileHeaderViewModel) {
-        guard let currentName = UserDefaults.standard.string(forKey: "username") else {
+        guard let currentUsername = UserDefaults.standard.string(forKey: "username") else {
             return
         }
 
-        if self.user.userName == currentName {
+        if isCurrentUserProfile {
             // Editing profile
+            let vc = EditProfileViewController()
+            let navVc = UINavigationController(rootViewController: vc)
+            present(navVc, animated: true)
         } else {
-            // following or unfolow current users profile that we are views
+            // following or unfollow current users profile that we are views
+            if self.isFollower {
+                //unfollow
+                DatabaseManager.shared.updateRelationship(for: user, follow: false) { [weak self] success in
+                    if success {
+                        DispatchQueue.main.async {
+                            self?.isFollower = false
+                            self?.collectionView.reloadData()
+                        }
+                    } else {
+
+                    }
+                }
+            } else {
+                //follow
+                DatabaseManager.shared.updateRelationship(for: user, follow: true) { [weak self] success in
+                    if success {
+                        DispatchQueue.main.async {
+                            self?.isFollower = true
+                            self?.collectionView.reloadData()
+                        }
+                    } else {
+                        
+                    }
+                }
+            }
         }
     }
 
     func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapFollowersButtonWith viewModel: profileHeaderViewModel) {
-
+        let vc = UserListViewController(type: .followers, user: user)
+        vc.users = followers
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapFollowingButtonWith viewModel: profileHeaderViewModel) {
-        
+        let vc = UserListViewController(type: .following, user: user)
+        vc.users = following
+        navigationController?.pushViewController(vc, animated: true)
     }
 
+    func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapTapAvatarFor viewModel: profileHeaderViewModel) {
+        guard isCurrentUserProfile else {
+            return
+        }
+        let actionSheet = UIAlertController(title: "Profile Picture", message: nil, preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        actionSheet.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+            DispatchQueue.main.async {
+                self.presentProfilePicturePicker(type: .camera)
+            }
+        }))
+        actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { _ in
+            self.presentProfilePicturePicker(type: .photoLibrary)
+        }))
+        present(actionSheet, animated: true)
+    }
 
+    func presentProfilePicturePicker(type: PicturePickerType) {
+        let picker = UIImagePickerController()
+        picker.sourceType = type == .camera ? .camera : .photoLibrary
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true)
+    }
+}
+
+//MARK: - UIImagePickerControllerDelegate
+
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+        guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
+            return
+        }
+        ProgressHUD.show("Uploading")
+        // upload and update UI
+        StorageManager.shared.uploadProfilePicture(with: image) { [weak self] result in
+            DispatchQueue.main.async {
+                guard let strongSelf = self else {
+                    return
+                }
+                switch result {
+                case .success(let downloadURL):
+                    UserDefaults.standard.set(downloadURL.absoluteString, forKey: "profile_picture_url")
+
+                    strongSelf.user = User(userName: strongSelf.user.userName,
+                                     profilePictureURL: downloadURL,
+                                     identifier: strongSelf.user.userName
+                    )
+                    ProgressHUD.showSucceed("Uploadet!")
+                    strongSelf.collectionView.reloadData()
+                case .failure(_):
+                    ProgressHUD.showError("Failed to upload profile picture.")
+                }
+            }
+        }
+    }
+}
+
+//MARK: - PostViewControllerDelegate
+
+extension ProfileViewController: PostViewControllerDelegate {
+    func postViewController(_ vc: PostViewController, didTapCommentButtonFor post: PostModel) {
+        // Present comments
+    }
+
+    func postViewController(_ vc: PostViewController, didTapProfileButtonFor post: PostModel) {
+        // Push another profile
+    }
 }

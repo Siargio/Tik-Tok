@@ -102,7 +102,11 @@ class ExploreManager {
                 // use id to fetch post from firebase
                 DispatchQueue.main.async {
                     let postId = model.id
-                    let vc = PostViewController(model: PostModel(identifier: postId))
+                    let vc = PostViewController(model: PostModel(identifier: postId, user: User(
+                        userName: "kanywest",
+                        profilePictureURL: nil,
+                        identifier: UUID().uuidString
+                    )))
                     self?.delegate?.pushViewController(vc)
                 }
             }
@@ -118,7 +122,11 @@ class ExploreManager {
             ExplorePostViewModel(imageView: UIImage(named: model.image), caption: model.caption) { [weak self] in
                 DispatchQueue.main.async {
                     let postId = model.id
-                    let vc = PostViewController(model: PostModel(identifier: postId))
+                    let vc = PostViewController(model: PostModel(identifier: postId,  user: User(
+                        userName: "kanywest",
+                        profilePictureURL: nil,
+                        identifier: UUID().uuidString
+                    )))
                     self?.delegate?.pushViewController(vc)
                 }
             }
@@ -134,7 +142,11 @@ class ExploreManager {
             ExplorePostViewModel(imageView: UIImage(named: model.image), caption: model.caption) { [weak self] in
                 DispatchQueue.main.async {
                     let postId = model.id
-                    let vc = PostViewController(model: PostModel(identifier: postId))
+                    let vc = PostViewController(model: PostModel(identifier: postId,  user: User(
+                        userName: "kanywest",
+                        profilePictureURL: nil,
+                        identifier: UUID().uuidString
+                    )))
                     self?.delegate?.pushViewController(vc)
                 }
             }
