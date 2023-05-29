@@ -12,6 +12,7 @@ protocol ProfileHeaderCollectionReusableViewDelegate: AnyObject {
     func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapPrimaryButtonWith viewModel: profileHeaderViewModel)
     func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapFollowersButtonWith viewModel: profileHeaderViewModel)
     func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapFollowingButtonWith viewModel: profileHeaderViewModel)
+    func profileHeaderCollectionReusableView(_ header: ProfileHeaderCollectionReusableView, didTapTapAvatarFor viewModel: profileHeaderViewModel)
 }
 
 class ProfileHeaderCollectionReusableView: UICollectionReusableView {
@@ -69,6 +70,10 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
         backgroundColor = .systemBackground
         addSubviews()
         configureButtons()
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapAvatar))
+        avatarImageView.isUserInteractionEnabled = true
+        avatarImageView.addGestureRecognizer(tap)
     }
 
     required init?(coder: NSCoder) {
@@ -93,7 +98,7 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
         let avatarSize: CGFloat = 130
         avatarImageView.frame = CGRect(x: (width - avatarSize)/2, y: 5, width: avatarSize, height: avatarSize)
         avatarImageView.layer.cornerRadius = avatarImageView.height/2
-//let buttonFullWidth = 210
+
         followersButton.frame = CGRect(x: (width - 210)/2, y: avatarImageView.bottom+10, width: 100, height: 60)
         followingButton.frame = CGRect(x: followersButton.right + 10, y: avatarImageView.bottom+10, width: 100, height: 60)
 
@@ -101,6 +106,13 @@ class ProfileHeaderCollectionReusableView: UICollectionReusableView {
     }
 
     //Actions
+
+    @objc func didTapAvatar() {
+        guard let viewModel = self.viewModel else {
+            return
+        }
+        delegate?.profileHeaderCollectionReusableView(self, didTapTapAvatarFor: viewModel)
+    }
 
     @objc func didTapPrimaryButton() {
         guard let viewModel = self.viewModel else {

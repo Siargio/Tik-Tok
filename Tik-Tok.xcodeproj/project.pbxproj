@@ -66,6 +66,8 @@
 		EC858E972A127FCA00FFC363 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E962A127FCA00FFC363 /* AuthenticationManager.swift */; };
 		EC858E992A127FE800FFC363 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC858E982A127FE800FFC363 /* HapticsManager.swift */; };
 		EC858EA62A12AC4700FFC363 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */; };
+		EC9D2DDB2A211CD4005A1A40 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D2DDA2A211CD4005A1A40 /* PostCollectionViewCell.swift */; };
+		ECE4B3922A24F3BC0033B100 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE4B3912A24F3BC0033B100 /* EditProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +128,8 @@
 		EC858E962A127FCA00FFC363 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		EC858E982A127FE800FFC363 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 		EC858EA52A12AC4700FFC363 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC9D2DDA2A211CD4005A1A40 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		ECE4B3912A24F3BC0033B100 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +239,7 @@
 				EC06EB0F2A18DF0A0067D6EF /* CaptionViewController.swift */,
 				EC4811B32A1A78E300E4D9B0 /* Notifications */,
 				EC56FE822A1CB248000D61B0 /* ProfileHeaderCollectionReusableView.swift */,
+				EC9D2DDA2A211CD4005A1A40 /* PostCollectionViewCell.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				EC858E892A127EE400FFC363 /* SettingsViewController.swift */,
 				EC858E8D2A127F4700FFC363 /* PostViewController.swift */,
 				EC4C625B2A13C5400016428F /* CommentsViewController.swift */,
+				ECE4B3912A24F3BC0033B100 /* EditProfileViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -510,6 +516,7 @@
 				EC4C625C2A13C5400016428F /* CommentsViewController.swift in Sources */,
 				EC858E8E2A127F4700FFC363 /* PostViewController.swift in Sources */,
 				EC4C627B2A155AC60016428F /* ExploreManager.swift in Sources */,
+				EC9D2DDB2A211CD4005A1A40 /* PostCollectionViewCell.swift in Sources */,
 				EC3A275A2A1362DC00BAA768 /* UIView+Ext.swift in Sources */,
 				EC858E882A127ED800FFC363 /* SingUpViewController.swift in Sources */,
 				EC858E8C2A127F0700FFC363 /* TabBarViewController.swift in Sources */,
@@ -530,6 +537,7 @@
 				EC3A275D2A136FFE00BAA768 /* PostModel.swift in Sources */,
 				EC858E632A12782E00FFC363 /* AppDelegate.swift in Sources */,
 				EC127F3D2A15FA4C00BED2A5 /* ExplorePostsCollectionViewCell.swift in Sources */,
+				ECE4B3922A24F3BC0033B100 /* EditProfileViewController.swift in Sources */,
 				EC4811AA2A1A71FF00E4D9B0 /* Notifications.swift in Sources */,
 				EC858E932A127F7C00FFC363 /* StorageManager.swift in Sources */,
 				EC4811B02A1A786800E4D9B0 /* NotificationsPostLikeTableViewCell.swift in Sources */,
