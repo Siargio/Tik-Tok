@@ -7,6 +7,8 @@
 	<key>NSCameraUsageDescription</key>
 	<string>Please allow access to record video</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Please allow access to save the video to your device.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Please allow access to sekect profile picture from library.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
