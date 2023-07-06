@@ -158,8 +158,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
 //MARK: - SwitchTableViewCellDelegate
 extension SettingsViewController: SwitchTableViewCellDelegate {
     func switchTableViewCell(_ cell: SwitchTableViewCell, didUpdateSwitchTO isOn: Bool) {
-        print(isOn)
-
+        HapticsManager.shared.vibrateForSelection()
         UserDefaults.standard.set(isOn, forKey: "save_video")
     }
 }
