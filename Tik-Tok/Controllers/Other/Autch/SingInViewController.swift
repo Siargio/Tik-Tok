@@ -120,9 +120,10 @@ class SingInViewController: UIViewController {
             DispatchQueue.main.async {
                 switch result {
                 case .success:
+                    HapticsManager.shared.vibrate(for: .success)
                     self?.dismiss(animated: true)
-                case .failure(let error):
-                    print(error)
+                case .failure:
+                    HapticsManager.shared.vibrate(for: .error)
                     let alert = UIAlertController(
                         title: "Sign in Failed",
                         message: "Please check your email and password to try again.",
