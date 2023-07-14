@@ -155,6 +155,8 @@ class ExploreManager {
 
     //MARK: - Private
 
+    /// Parse explore JSON data
+    /// - Returns: Returns a optional response model
     private func parseExploreData() -> ExploreResponse? {
         guard let path = Bundle.main.path(forResource: "explore", ofType: "json") else {
             return nil

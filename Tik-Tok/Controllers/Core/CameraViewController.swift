@@ -124,7 +124,10 @@ class CameraViewController: UIViewController {
         }
 
         //enable camera start
-        captureSession.startRunning()
+        DispatchQueue.main.async {
+            self.captureSession.startRunning()
+        }
+
     }
 }
 
