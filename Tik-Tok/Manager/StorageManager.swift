@@ -5,19 +5,26 @@
 //  Created by Sergio on 15.05.23.
 //
 
-import Foundation
 import FirebaseStorage
 import UIKit
 
+/// Manager object that deals with firebase storage
 final class StorageManager {
     static let shared = StorageManager()
 
+    /// Storage bucket reference
     private let storageBucket = Storage.storage().reference()
 
+    /// Private constructor
     private init() {}
 
     //Public
 
+    /// Upload a new user video to firebase
+    /// - Parameters:
+    ///    - url: local file url to video
+    ///    - fileName: Desired video file upload name
+    ///    - completion: Async callback result closure
     public func uploadVideo(from url: URL, fileName: String, completion: @escaping (Bool) -> Void) {
         guard let username = UserDefaults.standard.string(forKey: "username") else {
             return
